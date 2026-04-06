@@ -4,9 +4,11 @@ interface CarpoolCardProps {
     ride: {
         from: string,
         to: string,
-        date: number,
-        time: number,
+        date: string,
+        time: string,
         price: number,
+        seats?: number;
+        vehicleType?: string;
     }
 }
 
@@ -16,7 +18,7 @@ const CarpoolCard = ({ ride }: CarpoolCardProps) => {
     <div className="bg-white p-4 rounded-xl shadow-md flex flex-col md:flex-row justify-between gap-4">
       
       <div>
-        <h3 className="font-semibold text-lg">
+        <h3 className="font-semibold text-lg text-black">
           {ride.from} → {ride.to}
         </h3>
         <p className="text-sm text-gray-500">

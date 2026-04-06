@@ -5,12 +5,12 @@ import SearchBar from './searchbar'
 const Navbar = () => {
   return (
     <div>
-        <nav className="bg-white shadow-md px-6 py-4 flex justify-between items-center">
-            <h1 className="text-xl font-bold text-blue-600">
+        <nav className="bg-blue-600 shadow-md px-6 py-4 flex justify-between items-center">
+            <h1 className="text-xl font-bold text-white">
             Drive2Destiny
             </h1>
 
-            <div className="hidden md:flex gap-6 text-gray-700 font-medium">
+            <div className="hidden md:flex gap-6 text-white font-medium">
             <a href="#" className="hover:text-blue-600">Home</a>
             <a href="#" className="hover:text-blue-600">Explore</a>
             <a href="#" className="hover:text-blue-600">Carpool</a>

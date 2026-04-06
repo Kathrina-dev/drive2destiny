@@ -35,7 +35,7 @@ const SearchBar = () => {
             placeholder="Search destinations, hotels, guides..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="flex-1 border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="flex-1 border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#0F1E2E]"
           />
     
           <button

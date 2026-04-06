@@ -21,7 +21,7 @@ const HotelCard = ({ hotel }: HotelCardProps) => {
       />
 
       <div className="p-4">
-        <h3 className="text-lg font-semibold">{hotel.name}</h3>
+        <h3 className="text-lg font-semibold text-black">{hotel.name}</h3>
         <p className="text-gray-500 text-sm">{hotel.location}</p>
 
         <div className="flex justify-between items-center mt-3">
