@@ -1,4 +1,5 @@
-import { Hotel } from "@/pages/hotel";
+import { Hotel } from "@/components/gids/hotelgrid";
+import { TourGuide } from "@/components/gids/guidegrid";
 
 // Hotels
 export const mockHotels: Hotel[] = [
@@ -142,5 +143,58 @@ export const mockReviews = [
       "Hotel prices were really competitive — booked Heritage Palace for 40% less than other platforms. Clean UI, very easy to use.",
     location: "Jaipur, Rajasthan",
     tripCount: 2,
+  },
+];
+
+// Tour Guides
+ 
+export const mockGuides: TourGuide[] = [
+  {
+    name: "Meera Nair",
+    location: "Coorg, Karnataka",
+    languages: ["English", "Kannada", "Hindi"],
+    specialties: ["Nature", "Trekking", "Photography"],
+    pricePerDay: 1800,
+    rating: 4.9,
+    reviewCount: 124,
+    avatar: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=200&q=80",
+    verified: true,
+    available: true,
+  },
+  {
+    name: "Rajesh Sharma",
+    location: "Jaipur, Rajasthan",
+    languages: ["English", "Hindi", "French"],
+    specialties: ["Heritage", "Architecture", "Food"],
+    pricePerDay: 2200,
+    rating: 4.8,
+    reviewCount: 98,
+    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&q=80",
+    verified: true,
+    available: true,
+  },
+  {
+    name: "Anjali D'Souza",
+    location: "Goa",
+    languages: ["English", "Konkani", "Portuguese"],
+    specialties: ["Food", "Beach", "Photography"],
+    pricePerDay: 1500,
+    rating: 4.7,
+    reviewCount: 76,
+    avatar: "https://images.unsplash.com/photo-1499887142886-791eca5918cd?w=200&q=80",
+    verified: true,
+    available: false,
+  },
+  {
+    name: "Vikram Thapa",
+    location: "Manali, Himachal Pradesh",
+    languages: ["English", "Hindi", "Nepali"],
+    specialties: ["Adventure", "Trekking", "Nature"],
+    pricePerDay: 2500,
+    rating: 4.9,
+    reviewCount: 211,
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+    verified: true,
+    available: true,
   },
 ];

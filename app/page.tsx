@@ -1,15 +1,17 @@
 import React from "react";
-import HotelGrid from "@/pages/hotel";
+import HotelGrid from "@/components/gids/hotelgrid";
 import CarpoolCard from "@/components/carpoolcard";
 import ChatBox from "@/components/chatbox";
 import PhotoPost from "@/components/post";
 import ReviewCard from "@/components/reviewcard";
+import TourGuideGrid from "@/components/gids/guidegrid";
 import {
   mockHotels,
   mockRides,
   mockChats,
   mockPosts,
   mockReviews,
+  mockGuides,
 } from "@/data/mockdata";
 
 const SectionHeader = ({
@@ -42,6 +44,12 @@ export default function Home() {
           <SectionHeader title="Top Hotels" />
           <HotelGrid hotels={mockHotels} />
         </section>
+
+        {/* Tour guides */}
+        <section>
+          <SectionHeader title="Discover Local Guides" linkLabel="Become a guide" />
+          <TourGuideGrid guides={mockGuides} />
+        </section>
   
         {/* Carpool */}
         <section>
@@ -52,16 +60,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-
-        {/* ── Carpool chats ───────────────────────────────────────────────── */}
-        {/* <section>
-          <SectionHeader title="Carpool Chats" linkLabel="See all chats" />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {mockChats.map((chat, i) => (
-              <ChatBox key={i} {...chat} />
-            ))}
-          </div>
-        </section> */}
   
         {/* Traveller photos */}
         <section>
