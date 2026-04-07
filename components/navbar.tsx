@@ -1,7 +1,5 @@
 'use client';
-import React from 'react'
 import Link from 'next/link'
-import SearchBar from './searchbar'
 
 const Navbar = () => {
   return (
@@ -25,10 +23,6 @@ const Navbar = () => {
             </button>
 
         </nav>
-
-            <div className="mt-10">
-                <SearchBar />
-            </div>
     </div>
   )
 }
